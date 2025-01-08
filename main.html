@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Football Recruitment Form</title>
+    <link rel="stylesheet" href="main.css"> 
+</head>
+<body>
+    
+    <form class="form1">
+        
+        <fieldset>
+            <legend><b>FOOTBALL RECRUITMENT FORM</b></legend>
+
+            <div class="main1">
+
+                <div class="d1">
+                    <h3>PLAYER INFORMATION</h3>
+                    <label>Full Name</label>
+                    <input type="text" name="Full Name" placeholder="Enter Full Name" required><br><br>
+
+                    <label>Email</label>
+                    <input type="email" name="Email" placeholder="Enter Email" required><br><br>
+
+                    <label>Phone Number</label>
+                    <input type="tel" name="Phone Number" placeholder="Enter Phone Number" required><br><br>
+
+                    <label>Date of Birth</label>
+                    <input type="date" name="DOB" required><br><br>
+
+                    <div class="address">
+                        <label>Address</label><br><br>
+                        <input type="text" name="Street Address" placeholder="Street Address"><br>
+                        <input type="text" name="City" placeholder="City">
+                        <input type="text" name="State" placeholder="State">
+                        <input type="text" name="Zip" placeholder="Zip Code">
+                    </div>
+                </div>
+                <hr>
+                <div class="d1">
+                    <h3>PLAYER DETAILS</h3>
+                    <label>Position</label>
+                    <select name="Position">
+                        <option value="Forward">Forward</option>
+                        <option value="Midfielder">Midfielder</option>
+                        <option value="Defender">Defender</option>
+                        <option value="Goalkeeper">Goalkeeper</option>
+                    </select><br><br>
+
+                    <label>Current Club</label>
+                    <input type="text" name="Current Club" placeholder="Enter Current Club"><br><br>
+
+                    <label>Height (cm)</label>
+                    <input type="number" name="Height" placeholder="Enter Height" required><br><br>
+
+                    <label>Weight (kg)</label>
+                    <input type="number" name="Weight" placeholder="Enter Weight" required><br><br>
+
+                    <label>Preferred Foot</label>
+                    <div class="foot">
+                        <input type="radio" id="Left" name="Preferred Foot" value="Left"> <label for="Left">Left</label>
+                        <input type="radio" id="Right" name="Preferred Foot" value="Right"> <label for="Right">Right</label>
+                        <input type="radio" id="Both" name="Preferred Foot" value="Both"> <label for="Both">Both</label>
+                    </div>
+                </div>
+
+                <div class="se">
+                    <label>Availability Start Date</label>
+                    <input type="date" name="Start Date" required>
+
+                    <label>Availability End Date</label>
+                    <input type="date" name="End Date">
+                </div>
+
+                <div class="video">
+                    <label>Highlight Video (URL)</label>
+                    <input type="url" name="Highlight Video" placeholder="Paste Video URL">
+                </div>
+                
+                <button type="submit" value="submit">Submit</button>
+            </div>
+
+        </fieldset>
+    </form>
+
+</body>
+</html>
